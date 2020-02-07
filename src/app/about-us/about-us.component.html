@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button expand="block" routerLink="/multipurpose-screens-details" routerDirection="backward">
+        <ion-icon class="multi-purpose-toolbar-icon" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>About Us 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="content-about-us-one">
+  <p class="team-para">About us</p>
+  <ion-grid class="grid-person">
+    <ion-row>
+      <ion-col *ngFor="let item of items1" size="4" class="ion-no-padding">
+        <ion-avatar>
+          <img src="{{item.img}}" />
+        </ion-avatar>
+        <p class="name-para">{{item.name}}</p>
+        <p class="des-para">{{item.designation}}</p>
+      </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+  <p class="header-para">Our Vision</p>
+  <p class="para-desc"> Trust</p>
+  <p class="para-desc">  Purity</p> 
+   <p class="para-desc"> Quality</p> 
+  <p class="para-desc">
+    To Serve the Customers with excellent Jewellery offering and services that imbeds.
+    To beautify the world with our meticulously crafted fine jewelry
+    To inspire moments of happiness and celebrations
+    To enlighten and enrich women’s lives</p><br><br> 
+  <p class="para-desc">While preserving the Heritage of royal Indian Tradition. To create values in memorable moments of People’s lives by offering beautiful designer jewelleries that connects emotionally.
+  </p>
+  <p class="header-para">Our Mission</p>
+  <p class="para-desc">
+    Driving growth with immense business values by unleashing the opportunities and people potential.
+    Commitment to create the finest establishing Jewelleries.<br>.<br>
+    <strong>Brand Portfolio:</strong> <br>Bring to the world a portfolio of exquisitely designed jewelry brands that anticipate and satisfy people’s needs and desires.<br><br>
+    <strong>Partners:</strong><br> Create mutual and enduring value with customers and suppliers<br>.<br>
+      <strong> Environmental Protection:</strong><br>Contribute to a more sustainable planet </p>
+  <p class="header-para">Our Values</p>
+  <p class="para-desc"><strong> Originality:</strong><br>
+    We love to think outside the box and break conventions. We always surprise customers with our creativity</p>
+    <p class="para-desc"> <strong>Adventure:</strong><br>
+    We embrace changes and strive for innovation</p>
+    <p class="para-desc">
+    <strong>Integrity:</strong>
+    We conduct ourselves in an honest, trustworthy and ethical manner at all times</p> 
+    <p class="para-desc"> 
+   <strong> Quality:</strong>
+    We are totally dedicated to the pursuit of perfection</p> 
+    <p class="para-desc">
+   <strong> Caring:</strong> 
+    We are committed to protecting the environment, and maintaining respectful relation with customers, partners, suppliers, employees and communities
+     </p>
+     <p class="header-para">Contact Us</p>
+  <ion-grid class="ion-no-padding grid-contact-us">
+    <ion-row>
+      <ion-col size="12">
+        <ion-grid class="grid-contact-details">
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none">
+                <ion-icon src="assets/CustomIcons/about-us-call-answer.svg"></ion-icon>
+                <p>+91-1234567890</p>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none">
+                <ion-icon src="assets/CustomIcons/about-us-envelope.svg"></ion-icon>
+                <p>Jewellerystore12@gmail.com</p>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none">
+                <ion-icon class="pin-icon" src="assets/CustomIcons/about-us-maps-and-flags.svg"></ion-icon>
+                <p class="pin">382/11, Unique store abu lane, meerut<br>Pin- 250001</p>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

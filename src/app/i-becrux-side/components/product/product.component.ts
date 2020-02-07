@@ -2,7 +2,6 @@ import { Component, OnInit, Input, ViewChild, ElementRef, Renderer } from '@angu
 import { TranslateService } from '@ngx-translate/core';
 import { ToastController, NavController, Events } from '@ionic/angular';
 import { CustomThemeService } from 'src/app/services/custom-theme.service';
-import { GenericServiceService } from 'src/app/i-becrux-bottom/Pages/services/generic-service.service';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -19,7 +18,7 @@ export class ProductComponent implements OnInit {
   segments = "Newest"//first segment by default
 
   constructor(public translate: TranslateService, public toastController: ToastController, public renderer: Renderer,
-    public nav: NavController, public gService: GenericServiceService,
+    public nav: NavController,
     private events: Events, private service: CustomThemeService) {
     this.itemColor = ["black"];//to get the coloe from custom-theme service
     this.data = this.service.getTheme();//to get the selected theme color which is by default set as #F44336

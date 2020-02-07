@@ -1,0 +1,74 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button expand="block" routerLink="/multipurpose-screens-details" routerDirection="backward">
+        <ion-icon class="multi-purpose-toolbar-icon" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title no-padding>Contact Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-grid class="ion-no-padding grid-contact-us">
+    <ion-row>
+      <ion-col size="12">
+        <ion-grid class="grid-contact-details">
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none">
+                <ion-icon src="assets/CustomIcons/about-us-call-answer.svg"></ion-icon>
+                <p>+91-9087654321</p>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none">
+                <ion-icon src="assets/CustomIcons/about-us-envelope.svg"></ion-icon>
+                <p>jewelerystore12@gmail.com</p>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none">
+                <ion-icon class="pin-icon" src="assets/CustomIcons/about-us-maps-and-flags.svg"></ion-icon>
+                <p>382/11, Unique store abu lane, meerut<br>Pin- 250001</p>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+     
+    </ion-row>
+  </ion-grid>
+
+<ion-content (pinch)="pinchEvent($event)">
+  <div>
+    <ion-card>
+      <form>
+        <ion-item class='item-input-has-focus'>
+          <ion-label class='label-md' position="floating">Name</ion-label>
+          <ion-input placeholder="abcd" type="text" name="name" [(ngModel)]="formData.name" required>
+          </ion-input>
+        </ion-item>
+
+        <ion-item class='item-input-has-focus'>
+          <ion-label class='label-md' position="floating">Email</ion-label>
+          <ion-input placeholder="abc@gmail.com" type="email" name="email" [(ngModel)]="formData.email" required>
+          </ion-input>
+        </ion-item>
+
+        <ion-item class='item-input-has-focus'>
+          <ion-label class='label-md' position="floating">Message</ion-label>
+          <ion-input type="text" name="firstname" [(ngModel)]="formData.message" required>
+          </ion-input>
+        </ion-item>
+      </form>
+    </ion-card>
+  </div>
+  <ion-button shape="round"> Send </ion-button>
+
+
+</ion-content>
