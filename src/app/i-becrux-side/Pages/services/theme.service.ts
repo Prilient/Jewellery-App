@@ -2,7 +2,6 @@ import { Injectable, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import * as Color from 'color';
 import { Storage } from '@ionic/storage';
-import { ReturnStatement } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +10,7 @@ export class ThemeService {
 
   constructor(@Inject(DOCUMENT) private document: Document, private storage: Storage) {
   }
-  getThemeA(theme) {
+  getThemeA() {
 
   }
 

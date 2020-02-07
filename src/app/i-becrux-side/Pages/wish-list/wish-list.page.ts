@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Renderer } from '@angular/core';
 import { NavController, LoadingController, MenuController, IonContent } from '@ionic/angular';
-import { GenericServiceService } from 'src/app/i-becrux-bottom/Pages/services/generic-service.service';
+// import { GenericServiceService } from 'src/app/i-becrux-bottom/Pages/services/generic-service.service';
 
 @Component({
   selector: 'app-wish-list',
@@ -14,7 +14,7 @@ export class WishListPage implements OnInit {
   data: any;
   public products: any = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
   constructor(public menuCtrl: MenuController, public renderer: Renderer,
-    public nav: NavController, public loadingController: LoadingController, public gService: GenericServiceService) {
+    public nav: NavController, public loadingController: LoadingController) {
     setTimeout(() => {
       this.products = [
         { p_id: '0', badge: true, sale: true, featured: false, img: "assets/template-themes/becrux/images/item-images/1.jpg", name: "Printed Cotton Tshirt", price: "12.23", dPrice: "20.00", fav: false, res: true },
